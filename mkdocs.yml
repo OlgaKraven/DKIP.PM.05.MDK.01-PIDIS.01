@@ -1,0 +1,47 @@
+site_name: Методические рекомендации по лабораторным работам по дисциплине "Проектирование и дизайн ИС 3 курс - 1 семестр" 
+
+theme:
+  name: material
+  language: ru
+  features:
+    - content.code.copy     # кнопка "копировать"
+    - content.image.zoom    # zoom картинок
+    - navigation.top        # "наверх"
+    - navigation.tracking   # подсветка активного пункта в правом TOC
+    - toc.follow            # правый TOC следует за прокруткой
+nav:
+    - Лабораторная работа №1: index.md
+    - Лабораторная работа №2: 2.md
+    - Лабораторная работа №3: 
+      - Лабораторная работа №3 (1 часть): 3-1.md
+      - Лабораторная работа №3 (2 часть): 3-2.md
+    - Лабораторная работа №4: 4.md
+    - Лабораторная работа №5: 5.md
+    - Лабораторные работы №6: 
+      - Лабораторная работа №6 (Инливидуальная часть): 6.md 
+      - Групповая работа: vvedenie.md
+      - О задаче: intro.md
+      - Задание по дням:
+          - День 1: practice1.md
+          - День 2: practice2.md
+          - День 3: practice3.md
+          - День 4: practice4.md
+    - Требования для оформления: requirements.md
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - js/mermaid-init.js
+
+extra_css:
+  - stylesheets/extra.css
