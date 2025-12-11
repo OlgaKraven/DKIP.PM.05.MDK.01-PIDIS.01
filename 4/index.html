@@ -1,0 +1,1975 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../3/">
+      
+      
+        <link rel="next" href="../5/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/image/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Лабораторная работа №4 - Лабораторные работы по дисциплине "ПИДИС"</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#no4-" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Лабораторные работы по дисциплине &quot;ПИДИС&quot;" class="md-header__button md-logo" aria-label="Лабораторные работы по дисциплине " ПИДИС"" data-md-component="logo">
+      
+  <img src="../assets/image/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Лабораторные работы по дисциплине "ПИДИС"
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Лабораторная работа №4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Лабораторные работы по дисциплине &quot;ПИДИС&quot;" class="md-nav__button md-logo" aria-label="Лабораторные работы по дисциплине " ПИДИС"" data-md-component="logo">
+      
+  <img src="../assets/image/logo.png" alt="logo">
+
+    </a>
+    Лабораторные работы по дисциплине "ПИДИС"
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Описание лабораторных работ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №4
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Теория
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Теория">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Архитектуры информационных систем
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. Архитектуры информационных систем">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        От выбора архитектуры зависит:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Наиболее распространённые подходы архитектур:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Монолитная архитектура
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2. Монолитная архитектура">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Преимущества
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Недостатки
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-soa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. Сервис-ориентированная архитектура (SOA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. Сервис-ориентированная архитектура (SOA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Преимущества
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Недостатки
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. Микросервисная архитектура
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4. Микросервисная архитектура">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Преимущества
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Недостатки
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Сравнительная таблица архитектур
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-c4-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6. C4-модель архитектуры
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. C4-модель архитектуры">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Уровни:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Основные элементы C4
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Основные элементы C4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пользователи
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Связи
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Программная система
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Контейнер
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-c1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7. C1 — Контекстная диаграмма
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-c2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8. C2 — Диаграмма контейнеров
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-c3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.9. C3 — Диаграмма компонентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-c4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10. C4 — Диаграмма кода
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111-c4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11. Взаимосвязь уровней C4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Задание
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Задание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Вариант задания
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Для выполнения требуется:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Запрет
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Конрольные вопросы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Чек-лист для самопроверки
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Скачать шаблон отчёта
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторные работы №6
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Лабораторные работы №6
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №6 (Инливидуальная часть)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vvedenie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Групповая работа
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    О задаче
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4">
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание по дням
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Задание по дням
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Требования для оформления
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Теория
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Теория">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Архитектуры информационных систем
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. Архитектуры информационных систем">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        От выбора архитектуры зависит:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Наиболее распространённые подходы архитектур:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Монолитная архитектура
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2. Монолитная архитектура">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Преимущества
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Недостатки
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-soa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. Сервис-ориентированная архитектура (SOA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. Сервис-ориентированная архитектура (SOA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Преимущества
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Недостатки
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. Микросервисная архитектура
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4. Микросервисная архитектура">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Преимущества
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Недостатки
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Сравнительная таблица архитектур
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-c4-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6. C4-модель архитектуры
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. C4-модель архитектуры">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Уровни:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Основные элементы C4
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Основные элементы C4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пользователи
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Связи
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Программная система
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Контейнер
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-c1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7. C1 — Контекстная диаграмма
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-c2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8. C2 — Диаграмма контейнеров
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-c3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.9. C3 — Диаграмма компонентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-c4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10. C4 — Диаграмма кода
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111-c4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11. Взаимосвязь уровней C4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Задание
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Задание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Вариант задания
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Для выполнения требуется:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Запрет
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Конрольные вопросы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Чек-лист для самопроверки
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Скачать шаблон отчёта
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="no4-">Лабораторная работа №4 - Проектирование архитектуры информационной системы</h1>
+<h2 id="1"><strong>1. Теория</strong></h2>
+<h3 id="11"><strong>1.1. Архитектуры информационных систем</strong></h3>
+<p>Архитектура определяет структуру приложения, взаимодействие компонентов и способы интеграции.</p>
+<h4 id="_1">От выбора архитектуры зависит:</h4>
+<ol>
+<li>Сложность разработки и сопровождения</li>
+<li>Выбор инструментов разработки</li>
+<li>Гибкость и масштабируемость</li>
+<li>Требования к инфраструктуре и команде</li>
+</ol>
+<h4 id="_2">Наиболее распространённые подходы архитектур:</h4>
+<ol>
+<li>Монолитная архитектура</li>
+<li>Сервис-ориентированная архитектура (SOA)</li>
+<li>Микросервисная архитектура</li>
+<li>Гибридная архитектура</li>
+</ol>
+<h3 id="12"><strong>1.2. Монолитная архитектура</strong></h3>
+<p>Описание:
+Все слои приложения (UI, бизнес-логика, база данных) находятся в едином кодовом блоке и разворачиваются как одно приложение.</p>
+<p>Подходит для MVP, небольших проектов, стартапов.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/13.png" data-desc-position="bottom"><img alt="Монолитная архитектура" src="../assets/image/13.png"></a></p>
+<figcaption>
+<p>Рисунок 1 – Монолитная архитектура</p>
+</figcaption>
+</figure>
+<h4 id="_3">Преимущества</h4>
+<ul>
+<li>Простота разработки</li>
+<li>Быстрое развертывание</li>
+<li>Подходит для небольших приложений</li>
+</ul>
+<h4 id="_4">Недостатки</h4>
+<ul>
+<li>Сложно масштабировать</li>
+<li>Любое изменение требует пересборки всего приложения</li>
+<li>Высокий риск ошибок</li>
+<li>Ограниченная гибкость интеграций</li>
+</ul>
+<h3 id="13-soa"><strong>1.3. Сервис-ориентированная архитектура (SOA)</strong></h3>
+<p>Описание:
+Система разбивается на крупные бизнес-сервисы (Заказы, Платежи, Отчёты), взаимодействующие через API или ESB. Подходит для ERP, CRM, крупных корпоративных ИС.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/14.png" data-desc-position="bottom"><img alt="Сервис-ориентированная архитектура" src="../assets/image/14.png"></a></p>
+<figcaption>
+<p>Рисунок 2 – Сервис-ориентированная архитектура</p>
+</figcaption>
+</figure>
+<h4 id="_5">Преимущества</h4>
+<ul>
+<li>Разделение ответственности</li>
+<li>Масштабирование отдельных сервисов</li>
+<li>Повторное использование сервисов</li>
+</ul>
+<h4 id="_6">Недостатки</h4>
+<ul>
+<li>Необходима единая интеграционная шина</li>
+<li>Требуется контроль версий контрактов</li>
+<li>Высокая административная нагрузка</li>
+</ul>
+<h3 id="14"><strong>1.4. Микросервисная архитектура</strong></h3>
+<p>Описание:
+Система состоит из множества маленьких независимых сервисов с собственной базой данных и API.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/15.png" data-desc-position="bottom"><img alt="Микросервисная архитектура" src="../assets/image/15.png"></a></p>
+<figcaption>
+<p>Рисунок 3 – Микросервисная архитектура</p>
+</figcaption>
+</figure>
+<h4 id="_7">Преимущества</h4>
+<ul>
+<li>Независимое обновление</li>
+<li>Гибкое масштабирование</li>
+<li>Отказоустойчивость</li>
+<li>Разные технологии для разных сервисов</li>
+</ul>
+<h4 id="_8">Недостатки</h4>
+<ul>
+<li>Требовательность к DevOps</li>
+<li>Необходимость оркестрации (Docker/Kubernetes)</li>
+<li>Сложность тестирования</li>
+<li>Требуется централизованное логирование, авторизация, CI/CD</li>
+</ul>
+<h3 id="15"><strong>1.5. Сравнительная таблица архитектур</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Критерий</th>
+<th>Монолит</th>
+<th>SOA</th>
+<th>Микросервисы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Структура</td>
+<td>Единое приложение</td>
+<td>Крупные бизнес-сервисы</td>
+<td>Мелкие независимые сервисы</td>
+</tr>
+<tr>
+<td>Масштабируемость</td>
+<td>Слабая</td>
+<td>Средняя</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Сложность внедрения</td>
+<td>Низкая</td>
+<td>Средняя</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Обновление компонентов</td>
+<td>Пересборка целиком</td>
+<td>Частично</td>
+<td>Независимое</td>
+</tr>
+<tr>
+<td>Интеграция</td>
+<td>Затруднена</td>
+<td>Через ESB</td>
+<td>Через REST/gRPC</td>
+</tr>
+<tr>
+<td>Необходимые компетенции</td>
+<td>Базовые</td>
+<td>Архитектурные</td>
+<td>DevOps, CI/CD</td>
+</tr>
+<tr>
+<td>Применение</td>
+<td>Небольшие ИС, MVP</td>
+<td>Корпоративные решения</td>
+<td>Облачные платформы</td>
+</tr>
+</tbody>
+</table>
+<h3 id="16-c4-"><strong>1.6. C4-модель архитектуры</strong></h3>
+<p>C4 = Context → Container → Component → Code
+Модель показывает архитектуру «от общего к частному».</p>
+<h4 id="_9">Уровни:</h4>
+<ol>
+<li>C1 — Контекстная диаграмма: пользователи и внешние системы</li>
+<li>C2 — Диаграмма контейнеров: веб-приложение, API, база данных</li>
+<li>C3 — Диаграмма компонентов: контроллеры, сервисы, репозитории</li>
+<li>C4 — Диаграмма кода: классы, модули</li>
+</ol>
+<h4 id="c4">Основные элементы C4</h4>
+<h5 id="_10">Пользователи</h5>
+<p>Персоны и внешние акторы.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/16.png" data-desc-position="bottom"><img alt="Пользователи" src="../assets/image/16.png"></a></p>
+<figcaption>
+<p>Рисунок 4 – Пользователи</p>
+</figcaption>
+</figure>
+<h5 id="_11">Связи</h5>
+<p>Штриховые линии с подписями.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/17.png" data-desc-position="bottom"><img alt="Связи" src="../assets/image/17.png"></a></p>
+<figcaption>
+<p>Рисунок 5 – Связи</p>
+</figcaption>
+</figure>
+<h5 id="_12">Программная система</h5>
+<p>Блок, отображающий разрабатываемое решение.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/18.png" data-desc-position="bottom"><img alt="Программная система" src="../assets/image/18.png"></a></p>
+<figcaption>
+<p>Рисунок 6 – Программная система</p>
+</figcaption>
+</figure>
+<h5 id="_13">Контейнер</h5>
+<p>Веб-приложение, API-сервер, БД, очередь сообщений, мобильное приложение.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/19.png" data-desc-position="bottom"><img alt="Контейнер" src="../assets/image/19.png"></a></p>
+<figcaption>
+<p>Рисунок 7 – Контейнер</p>
+</figcaption>
+</figure>
+<h3 id="17-c1"><strong>1.7. C1 — Контекстная диаграмма</strong></h3>
+<p>Показывает:</p>
+<ul>
+<li>систему</li>
+<li>внешние системы</li>
+<li>пользователей</li>
+</ul>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/20.png" data-desc-position="bottom"><img alt="Контекстная диаграмма" src="../assets/image/20.png"></a></p>
+<figcaption>
+<p>Рисунок 8 – Контекстная диаграмма</p>
+</figcaption>
+</figure>
+<h3 id="18-c2"><strong>1.8. C2 — Диаграмма контейнеров</strong></h3>
+<p>Показывает структурные блоки:</p>
+<ul>
+<li>Web App</li>
+<li>API Server</li>
+<li>Database</li>
+<li>Мобильное приложение</li>
+<li>Очередь сообщений / микросервис</li>
+</ul>
+<p>Контейнер ≠ Docker (здесь логическая сущность, не виртуализация).</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/22.png" data-desc-position="bottom"><img alt="Диаграмма контейнеров" src="../assets/image/22.png"></a></p>
+<figcaption>
+<p>Рисунок 9 – Диаграмма контейнеров</p>
+</figcaption>
+</figure>
+<h3 id="19-c3"><strong>1.9. C3 — Диаграмма компонентов</strong></h3>
+<p>Показывает:</p>
+<ul>
+<li>модули</li>
+<li>сервисы</li>
+<li>классы / пакеты</li>
+</ul>
+<p>Компоненты группируются по ответственности:
+контроллер, сервис, репозиторий, модель.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/23.png" data-desc-position="bottom"><img alt="Диаграмма компонентов" src="../assets/image/23.png"></a></p>
+<figcaption>
+<p>Рисунок 10 – Диаграмма компонентов</p>
+</figcaption>
+</figure>
+<h3 id="110-c4"><strong>1.10. C4 — Диаграмма кода</strong></h3>
+<p>Показывает:</p>
+<ul>
+<li>классы</li>
+<li>интерфейсы</li>
+<li>методы</li>
+<li>связи</li>
+</ul>
+<p>Обычно выполняется в UML.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/24.png" data-desc-position="bottom"><img alt="Диаграмма контейнеров" src="../assets/image/24.png"></a></p>
+<figcaption>
+<p>Рисунок 11 – Диаграмма кода</p>
+</figcaption>
+</figure>
+<h3 id="111-c4"><strong>1.11. Взаимосвязь уровней C4</strong></h3>
+<p>C1 — контекст →
+C2 — контейнеры →
+C3 — компоненты →
+C4 — код</p>
+<hr>
+<h2 id="2"><strong>2. Задание</strong></h2>
+<h3 id="21"><strong>2.1. Вариант задания</strong></h3>
+<p>1) Ознакомиться с архитектурами и C4-нотацией. <br>
+2) Нарисовать для своей ИС 3 архитектуры на уровне C1:<br>
+2.1) монолит<br>
+2.2) SOA<br>
+2.3) микросервисы<br>
+3) Приложить 3 PDF-файла к отчёту.<br>
+4) Ответить на контрольные вопросы.</p>
+<h3 id="22"><strong>2.2. Для выполнения требуется:</strong></h3>
+<p>1) Шаблон, см. описание лабораторной.<br>
+2) Вариант задания — связан с вами на семестр опубликован в ЛМС.<br>
+3) Требования для оформления см. в ЛМС или раздел в документации
+4) Для выполнения использовать draw.io  </p>
+<h3 id="23"><strong>2.3. Запрет</strong></h3>
+<p>Использование ИИ для решения задачи.</p>
+<hr>
+<h2 id="3"><strong>3. Конрольные вопросы</strong></h2>
+<ol>
+<li>Чем отличаются монолит и микросервис с точки зрения обновления кода?</li>
+<li>Что такое API и зачем оно нужно при архитектуре SOA/микросервисов?</li>
+<li>Почему важно, чтобы у каждого микросервиса была своя база данных?</li>
+<li>Какие риски могут возникнуть при неправильном делении на микросервисы?</li>
+<li>Какую архитектуру проще протестировать и сопровождать в учебном проекте?</li>
+</ol>
+<h2 id="4-"><strong>4. Чек-лист для самопроверки</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Баллы</th>
+<th>Критерии выполнения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>Работа выполнена полностью и самостоятельно. Представлены 3 контекстные диаграммы C4: монолит, SOA, микросервисы. Все диаграммы выполнены корректно, с обозначением пользователей, внешних систем и связей. В отчёт включены ответы на контрольные вопросы; оформление соответствует требованиям (PDF + файл отчёта).</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Диаграммы выполнены, но есть неточности: отсутствуют элементы, допущены ошибки в обозначениях или связях; либо не полностью оформлен отчёт. Однако работа явно выполнена самостоятельно, структура в целом корректна.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Представлены частично выполненные материалы: только 1–2 диаграммы или диаграммы без подписей/структуры; ответы на вопросы отсутствуют или неполные. Требования к оформлению нарушены. Видно, что работа выполнялась, но качество низкое.</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Работа скопирована, выполнена исключительно с помощью ИИ, не содержит следов самостоятельной деятельности, или не сдана.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5"><strong>5. Скачать шаблон отчёта</strong></h2>
+<p>👉 <a href="../template/LR4.docx">Скачать шаблон отчёта</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

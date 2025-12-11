@@ -1,0 +1,2029 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../practice2/">
+      
+      
+        <link rel="next" href="../practice4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/image/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>День 3 - Лабораторные работы по дисциплине "ПИДИС"</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-docker-" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Лабораторные работы по дисциплине &quot;ПИДИС&quot;" class="md-header__button md-logo" aria-label="Лабораторные работы по дисциплине " ПИДИС"" data-md-component="logo">
+      
+  <img src="../assets/image/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Лабораторные работы по дисциплине "ПИДИС"
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              День 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Лабораторные работы по дисциплине &quot;ПИДИС&quot;" class="md-nav__button md-logo" aria-label="Лабораторные работы по дисциплине " ПИДИС"" data-md-component="logo">
+      
+  <img src="../assets/image/logo.png" alt="logo">
+
+    </a>
+    Лабораторные работы по дисциплине "ПИДИС"
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Описание лабораторных работ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторные работы №6
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Лабораторные работы №6
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №6 (Инливидуальная часть)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vvedenie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Групповая работа
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    О задаче
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание по дням
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Задание по дням
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цели занятия
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensitivity-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Реализация анализа чувствительности (Sensitivity Analysis)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Реализация анализа чувствительности (Sensitivity Analysis)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Параметры для анализа
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Формулы вариаций
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример структуры ответа (JSON)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Декомпозиция API и файлов проекта на третьей неделе
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Декомпозиция API и файлов проекта на третьей неделе">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcapi-c-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Рекомендуемая структура src/api/ (C#-вариант)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calcsensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Эндпоинт /calc/sensitivity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Эндпоинт /calc/sensitivity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример сервиса (C#)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример контроллера (C#)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#htmlpdf-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Генерация HTML/PDF-отчёта
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Генерация HTML/PDF-отчёта">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Содержание отчёта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример HTML-шаблона
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Генерация PDF (опционально)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker: создание контейнера
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker: создание контейнера">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile-aspnet-core-net-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dockerfile (ASP.NET Core, .NET 9)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker Compose (при необходимости)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Запуск контейнера
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тестирование контейнера
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Работа с GitHub на третьей неделе
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Работа с GitHub на третьей неделе">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Новые ветки
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Примеры коммитов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-request-develop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull Request в develop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обновление README
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Демонстрация на занятии
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Итоговые артефакты третьей недели
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Распределение объёма работы между участниками (2–4 человека)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Распределение объёма работы между участниками (2–4 человека)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Единицы работы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Распределение по размеру команды
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Требования для оформления
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цели занятия
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensitivity-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Реализация анализа чувствительности (Sensitivity Analysis)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Реализация анализа чувствительности (Sensitivity Analysis)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Параметры для анализа
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Формулы вариаций
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример структуры ответа (JSON)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Декомпозиция API и файлов проекта на третьей неделе
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Декомпозиция API и файлов проекта на третьей неделе">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcapi-c-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Рекомендуемая структура src/api/ (C#-вариант)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calcsensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Эндпоинт /calc/sensitivity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Эндпоинт /calc/sensitivity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример сервиса (C#)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример контроллера (C#)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#htmlpdf-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Генерация HTML/PDF-отчёта
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Генерация HTML/PDF-отчёта">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Содержание отчёта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пример HTML-шаблона
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Генерация PDF (опционально)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker: создание контейнера
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker: создание контейнера">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile-aspnet-core-net-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dockerfile (ASP.NET Core, .NET 9)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker Compose (при необходимости)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Запуск контейнера
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тестирование контейнера
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Работа с GitHub на третьей неделе
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Работа с GitHub на третьей неделе">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Новые ветки
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Примеры коммитов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-request-develop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull Request в develop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обновление README
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Демонстрация на занятии
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Итоговые артефакты третьей недели
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Распределение объёма работы между участниками (2–4 человека)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Распределение объёма работы между участниками (2–4 человека)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Единицы работы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Распределение по размеру команды
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="3-docker-">День 3 - Анализ чувствительности, генерация отчёта и Docker-контейнеризация</h1>
+<p>(третья неделя проектной работы, создание полноценного прототипа сервиса)</p>
+<p>Третья неделя посвящена превращению каркаса InvestCalc в полноценный прототип сервиса. На этом этапе команда добавляет анализ чувствительности, реализует генерацию отчёта и упаковывает приложение в Docker-контейнер.</p>
+<h2 id="_1">Цели занятия</h2>
+<p>К концу занятия команда должна:</p>
+<ul>
+<li>реализовать анализ чувствительности ±20 % для ключевых параметров:</li>
+<li>CAPEX;</li>
+<li>OPEX;</li>
+<li>SaaS-подписка (cloud-сценарий);</li>
+<li>экономия в год;</li>
+<li>рост доходов;</li>
+<li>добавить генерацию отчёта, включающего:</li>
+<li>HTML-отчёт (обязательно);</li>
+<li>опционально — генерацию PDF на основе HTML;</li>
+<li>подготовить контейнеризацию сервиса:</li>
+<li>создать Dockerfile для приложения;</li>
+<li>при необходимости — настроить docker-compose (например, если используется БД);</li>
+<li>протестировать сборку и запуск контейнера;</li>
+<li>обновить репозиторий на GitHub:</li>
+<li>оформить новые ветки (<code>feature/sensitivity</code>, <code>feature/report</code>, <code>feature/docker</code>);</li>
+<li>сделать осмысленные коммиты;</li>
+<li>создать Pull Request в <code>develop</code>;</li>
+<li>дополнить README инструкциями по запуску, описанием новых эндпоинтов и Docker-сборки.</li>
+</ul>
+<hr>
+<h2 id="sensitivity-analysis">Реализация анализа чувствительности (Sensitivity Analysis)</h2>
+<p>Анализ чувствительности позволяет понять, как изменение ключевых параметров на ±20 % влияет на TCO, ROI и Payback Period.</p>
+<h3 id="_2">Параметры для анализа</h3>
+<p>Анализ проводится для следующих параметров:</p>
+<ul>
+<li>CAPEX (капитальные затраты);</li>
+<li>OPEX (операционные затраты);</li>
+<li>стоимость подписки SaaS (для облачного сценария);</li>
+<li>экономия в год (savings);</li>
+<li>рост доходов в год (revenue growth).</li>
+</ul>
+<h3 id="_3">Формулы вариаций</h3>
+<p>Для каждого параметра рассчитываются два варианта:</p>
+<div class="highlight"><pre><span></span><code>value_low  = value * 0.8   // уменьшение на 20 %
+value_high = value * 1.2   // увеличение на 20 %
+</code></pre></div>
+<p>Для каждой вариации выполняется полный расчёт:</p>
+<ul>
+<li>TCO,</li>
+<li>ROI,</li>
+<li>Payback Period.</li>
+</ul>
+<h3 id="json">Пример структуры ответа (JSON)</h3>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"opex"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"base"</span><span class="p">:</span><span class="w"> </span><span class="mi">120000</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"low"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">96000</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"tco"</span><span class="p">:</span><span class="w"> </span><span class="mi">840000</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"roi"</span><span class="p">:</span><span class="w"> </span><span class="mf">181.0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"payback"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.2</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">"high"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">144000</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"tco"</span><span class="p">:</span><span class="w"> </span><span class="mi">1080000</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"roi"</span><span class="p">:</span><span class="w"> </span><span class="mf">140.2</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"payback"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.8</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Аналогичная структура может возвращаться для <code>capex</code>, <code>subscription</code>, <code>savings</code>, <code>revenue</code>.</p>
+<hr>
+<h2 id="api">Декомпозиция API и файлов проекта на третьей неделе</h2>
+<p>На этом этапе логично разделить API на несколько файлов, чтобы:</p>
+<ul>
+<li>разных участников можно было закрепить за разными контроллерами/частями API;</li>
+<li>код был модульным и читаемым.</li>
+</ul>
+<h3 id="srcapi-c-">Рекомендуемая структура <code>src/api/</code> (C#-вариант)</h3>
+<div class="highlight"><pre><span></span><code>src/
+│
+├── api/
+│   ├── CalcLocalController.cs        // /calc/local
+│   ├── CalcCloudController.cs        // /calc/cloud
+│   ├── SensitivityController.cs      // /calc/sensitivity
+│   ├── CompareController.cs          // /compare
+│   └── ReportController.cs           // /report (если используется)
+│
+├── services/
+│   ├── LocalCalcService.cs
+│   ├── CloudCalcService.cs
+│   ├── SensitivityService.cs
+│   ├── CompareService.cs
+│   └── ReportService.cs
+│
+├── models/
+│   ├── CalcRequest.cs
+│   ├── CalcResponse.cs
+│   ├── SensitivityResult.cs
+│   └── ParameterSensitivity.cs
+│
+└── Program.cs
+</code></pre></div>
+<p>При таком разделении можно распределять контроллеры и сервисы по участникам, не мешая друг другу в одном файле.</p>
+<hr>
+<h2 id="calcsensitivity">Эндпоинт <code>/calc/sensitivity</code></h2>
+<h3 id="c">Пример сервиса (C#)</h3>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SensitivityService</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="n">LocalCalcService</span><span class="w"> </span><span class="n">_local</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">SensitivityService</span><span class="p">(</span><span class="n">LocalCalcService</span><span class="w"> </span><span class="n">local</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">_local</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">local</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">SensitivityResult</span><span class="w"> </span><span class="nf">Analyze</span><span class="p">(</span><span class="n">CalcRequest</span><span class="w"> </span><span class="n">req</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">var</span><span class="w"> </span><span class="n">results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">ParameterSensitivity</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="w">        </span><span class="k">void</span><span class="w"> </span><span class="nf">AddParam</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="k">value</span><span class="p">,</span><span class="w"> </span><span class="n">Action</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">apply</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="n">original</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">apply</span><span class="p">(</span><span class="n">original</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">0.8</span><span class="p">);</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">low</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_local</span><span class="p">.</span><span class="n">Calculate</span><span class="p">(</span><span class="n">req</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">apply</span><span class="p">(</span><span class="n">original</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">1.2</span><span class="p">);</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">high</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_local</span><span class="p">.</span><span class="n">Calculate</span><span class="p">(</span><span class="n">req</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">apply</span><span class="p">(</span><span class="n">original</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">results</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ParameterSensitivity</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">original</span><span class="p">,</span><span class="w"> </span><span class="n">low</span><span class="p">,</span><span class="w"> </span><span class="n">high</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">AddParam</span><span class="p">(</span><span class="s">"capex"</span><span class="p">,</span><span class="w">   </span><span class="n">req</span><span class="p">.</span><span class="n">Capex</span><span class="p">,</span><span class="w">                        </span><span class="n">v</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">req</span><span class="p">.</span><span class="n">Capex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">);</span>
+<span class="w">        </span><span class="n">AddParam</span><span class="p">(</span><span class="s">"opex"</span><span class="p">,</span><span class="w">    </span><span class="n">req</span><span class="p">.</span><span class="n">Opex</span><span class="p">,</span><span class="w">                         </span><span class="n">v</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">req</span><span class="p">.</span><span class="n">Opex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">);</span>
+<span class="w">        </span><span class="n">AddParam</span><span class="p">(</span><span class="s">"savings"</span><span class="p">,</span><span class="w"> </span><span class="n">req</span><span class="p">.</span><span class="n">ExpectedSavingsPerYear</span><span class="p">,</span><span class="w">       </span><span class="n">v</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">req</span><span class="p">.</span><span class="n">ExpectedSavingsPerYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">);</span>
+<span class="w">        </span><span class="n">AddParam</span><span class="p">(</span><span class="s">"revenue"</span><span class="p">,</span><span class="w"> </span><span class="n">req</span><span class="p">.</span><span class="n">ExpectedRevenueGrowthPerYear</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">req</span><span class="p">.</span><span class="n">ExpectedRevenueGrowthPerYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">SensitivityResult</span><span class="p">(</span><span class="n">results</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="c_1">Пример контроллера (C#)</h3>
+<div class="highlight"><pre><span></span><code><span class="na">[ApiController]</span>
+<span class="na">[Route("calc")]</span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SensitivityController</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ControllerBase</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="n">SensitivityService</span><span class="w"> </span><span class="n">_sensitivity</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">SensitivityController</span><span class="p">(</span><span class="n">SensitivityService</span><span class="w"> </span><span class="n">sensitivity</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">_sensitivity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensitivity</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="na">[HttpPost("sensitivity")]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">IActionResult</span><span class="w"> </span><span class="nf">Sensitivity</span><span class="p">(</span><span class="n">CalcRequest</span><span class="w"> </span><span class="n">req</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_sensitivity</span><span class="p">.</span><span class="n">Analyze</span><span class="p">(</span><span class="n">req</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nf">Ok</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>При необходимости можно добавить фильтрацию параметров (например, анализировать только те, что явно указаны в запросе).</p>
+<hr>
+<h2 id="htmlpdf-">Генерация HTML/PDF-отчёта</h2>
+<h3 id="_4">Содержание отчёта</h3>
+<p>Отчёт должен содержать:</p>
+<ul>
+<li>название проекта и клиента;</li>
+<li>блок исходных данных (CAPEX, OPEX, подписка, период, эффекты);</li>
+<li>результаты расчётов:</li>
+<li>TCO (local и cloud),</li>
+<li>ROI,</li>
+<li>срок окупаемости;</li>
+<li>таблицу сценариев (например, базовый, оптимистичный, пессимистичный);</li>
+<li>результаты анализа чувствительности;</li>
+<li>краткие выводы.</li>
+</ul>
+<p>Рекомендуемый файл шаблона: <code>docs/report-template.html</code>.</p>
+<h3 id="html-">Пример HTML-шаблона</h3>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>InvestCalc Report<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span><span class="w"> </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#1b4e9b</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="p">.</span><span class="nc">table</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">border-collapse</span><span class="p">:</span><span class="w"> </span><span class="kc">collapse</span><span class="p">;</span><span class="w"> </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"> </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="p">.</span><span class="nc">table</span><span class="w"> </span><span class="nt">th</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">table</span><span class="w"> </span><span class="nt">td</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#ccc</span><span class="p">;</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="p">.</span><span class="nc">section</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Отчёт по проекту "{{project_name}}"<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"section"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Исходные данные<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    {{input_table}}
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"section"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Результаты расчётов<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    {{calc_table}}
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"section"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Анализ сценариев<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    {{scenarios_table}}
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"section"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Анализ чувствительности<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    {{sensitivity_table}}
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"section"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Выводы<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{conclusion}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="pdf">Генерация PDF (опционально)</h3>
+<p>Возможные варианты:</p>
+<ul>
+<li>Python: WeasyPrint;</li>
+<li>Node.js: Puppeteer;</li>
+<li>C#: DinkToPdf, QuestPDF и аналогичные библиотеки.</li>
+</ul>
+<p>Пример (Node.js + Puppeteer):</p>
+<div class="highlight"><pre><span></span><code><span class="k">await</span><span class="w"> </span><span class="nx">page</span><span class="p">.</span><span class="nx">pdf</span><span class="p">({</span><span class="w"> </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s2">"report.pdf"</span><span class="p">,</span><span class="w"> </span><span class="nx">format</span><span class="o">:</span><span class="w"> </span><span class="s2">"A4"</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div>
+<p>PDF не является обязательным требованием, но может быть выполнен как дополнительный бонус.</p>
+<hr>
+<h2 id="docker">Docker: создание контейнера</h2>
+<h3 id="dockerfile-aspnet-core-net-9">Dockerfile (ASP.NET Core, .NET 9)</h3>
+<div class="highlight"><pre><span></span><code><span class="c"># Сборка (build)</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">mcr.microsoft.com/dotnet/sdk:9.0</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">build</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+<span class="k">RUN</span><span class="w"> </span>dotnet<span class="w"> </span>restore
+<span class="k">RUN</span><span class="w"> </span>dotnet<span class="w"> </span>publish<span class="w"> </span>-c<span class="w"> </span>Release<span class="w"> </span>-o<span class="w"> </span>out
+
+<span class="c"># Среда выполнения (runtime)</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">mcr.microsoft.com/dotnet/aspnet:9.0</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>build<span class="w"> </span>/app/out<span class="w"> </span>.
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">8080</span>
+<span class="k">ENTRYPOINT</span><span class="w"> </span><span class="p">[</span><span class="s2">"dotnet"</span><span class="p">,</span><span class="w"> </span><span class="s2">"InvestCalc.Api.dll"</span><span class="p">]</span>
+</code></pre></div>
+<h3 id="docker-compose">Docker Compose (при необходимости)</h3>
+<div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">investcalc</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"8080:8080"</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">investcalc-api</span>
+</code></pre></div>
+<p>При использовании БД сюда можно добавить отдельный сервис (например, PostgreSQL).</p>
+<h3 id="_5">Запуск контейнера</h3>
+<p>Вариант без compose:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>investcalc<span class="w"> </span>.
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span>investcalc
+</code></pre></div>
+<p>Вариант с docker-compose:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>--build
+</code></pre></div>
+<hr>
+<h2 id="_6">Тестирование контейнера</h2>
+<p>После запуска контейнера необходимо проверить:</p>
+<ul>
+<li>что сервис стартовал без ошибок;</li>
+<li>что API отвечает корректно.</li>
+</ul>
+<p>Пример проверки:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8080/calc/local<span class="w">   </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w">   </span>-d<span class="w"> </span>@data/input-local.json
+</code></pre></div>
+<p>Проверяется:</p>
+<ul>
+<li>успешный HTTP-статус;</li>
+<li>корректность JSON-ответа;</li>
+<li>возможность вызываемых эндпоинтов, включая <code>/calc/sensitivity</code>.</li>
+</ul>
+<hr>
+<h2 id="github">Работа с GitHub на третьей неделе</h2>
+<h3 id="_7">Новые ветки</h3>
+<p>Рекомендуется разделить работу по функциональным веткам:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/sensitivity
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/report
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/docker
+</code></pre></div>
+<p>Фактически ветки создаются последовательно, с переключением между ними, а не одной командой подряд, но в методичке фиксируются именно такие ветви.</p>
+<h3 id="_8">Примеры коммитов</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>src/services/SensitivityService.cs<span class="w"> </span>src/api/SensitivityController.cs
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"feat: added sensitivity analysis endpoint"</span>
+
+git<span class="w"> </span>add<span class="w"> </span>docs/report-template.html<span class="w"> </span>src/services/ReportService.cs
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"feat: added HTML report generator"</span>
+
+git<span class="w"> </span>add<span class="w"> </span>docker/Dockerfile<span class="w"> </span>docker/docker-compose.yml
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"feat: added Docker container configuration"</span>
+</code></pre></div>
+<h3 id="pull-request-develop">Pull Request в <code>develop</code></h3>
+<p>Создаются отдельные PR:</p>
+<ul>
+<li>по анализу чувствительности;</li>
+<li>по генерации отчёта;</li>
+<li>по Docker-контейнеризации.</li>
+</ul>
+<p>Каждый Pull Request должен содержать:</p>
+<ul>
+<li>краткое описание изменений;</li>
+<li>ссылку на соответствующий issue;</li>
+<li>при необходимости — скриншоты (например, отчёта или успешного вызова API);</li>
+<li>примеры запросов/ответов.</li>
+</ul>
+<hr>
+<h2 id="readme">Обновление README</h2>
+<p>В README необходимо добавить разделы:</p>
+<ul>
+<li>как запустить проект локально (без Docker);</li>
+<li>API-эндпоинты:</li>
+<li><code>POST /calc/local</code>;</li>
+<li><code>POST /calc/cloud</code>;</li>
+<li><code>POST /calc/sensitivity</code>;</li>
+<li><code>POST /compare</code>;</li>
+<li>при наличии — <code>POST /report</code>;</li>
+<li>примеры запросов и ответов (возможно, с ссылкой на <code>docs/examples/</code>);</li>
+<li>как собрать и запустить Docker-контейнер:</li>
+<li>команды <code>docker build</code>, <code>docker run</code>;</li>
+<li>при наличии — инструкции по <code>docker compose</code>;</li>
+<li>скриншоты отчёта (<code>docs/screens/report.png</code>);</li>
+<li>краткое описание анализа чувствительности.</li>
+</ul>
+<hr>
+<h2 id="_9">Демонстрация на занятии</h2>
+<p>К концу третьей недели команда должна продемонстрировать:</p>
+<ul>
+<li>рабочий эндпоинт <code>/calc/sensitivity</code> с примером запроса и ответа;</li>
+<li>HTML-отчёт (открытый в браузере или сохранённый файл);</li>
+<li>Docker-контейнер, который запускается одной командой и обслуживает API;</li>
+<li>набор коммитов и Pull Request в GitHub;</li>
+<li>обновлённый README с инструкциями по запуску и описанием новых функций.</li>
+</ul>
+<hr>
+<h2 id="_10">Итоговые артефакты третьей недели</h2>
+<table>
+<thead>
+<tr>
+<th>Результат</th>
+<th>Файл/артефакт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Анализ чувствительности</td>
+<td><code>src/services/SensitivityService.cs</code></td>
+</tr>
+<tr>
+<td>Эндпоинт API</td>
+<td><code>src/api/SensitivityController.cs</code> (или метод <code>/calc/sensitivity</code>)</td>
+</tr>
+<tr>
+<td>HTML-шаблон отчёта</td>
+<td><code>docs/report-template.html</code></td>
+</tr>
+<tr>
+<td>Генерация отчёта</td>
+<td><code>src/services/ReportService.cs</code></td>
+</tr>
+<tr>
+<td>Dockerfile</td>
+<td><code>docker/Dockerfile</code></td>
+</tr>
+<tr>
+<td>Docker Compose</td>
+<td><code>docker/docker-compose.yml</code></td>
+</tr>
+<tr>
+<td>Скриншот отчёта</td>
+<td><code>docs/screens/report.png</code></td>
+</tr>
+<tr>
+<td>PR и коммиты</td>
+<td>репозиторий GitHub</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="24">Распределение объёма работы между участниками (2–4 человека)</h2>
+<p>Чтобы каждый участник команды выполнил сопоставимый объём кода, функционал третьей недели можно разделить на 12 условных «единиц работы» (атомарных задач). Это позволит честно распределить нагрузку при любой численности команды от 2 до 4 человек.</p>
+<h3 id="_11">Единицы работы</h3>
+<p><strong>Блок «Анализ чувствительности»</strong></p>
+<ol>
+<li>Реализация моделей <code>SensitivityResult</code> и <code>ParameterSensitivity</code> в проекте (<code>models/</code>).</li>
+<li>Реализация метода <code>Analyze</code> в <code>SensitivityService</code> (расчёт вариаций ±20 %).</li>
+<li>Реализация эндпоинта <code>/calc/sensitivity</code> в контроллере (<code>SensitivityController</code> или аналог).</li>
+<li>Подготовка документации и примеров JSON-запросов/ответов для анализа чувствительности (<code>docs/sensitivity.md</code>, примеры в <code>docs/examples/</code>).</li>
+</ol>
+<p><strong>Блок «Генерация отчёта»</strong></p>
+<ol>
+<li>Разработка HTML-шаблона отчёта <code>docs/report-template.html</code> (структура, стили).</li>
+<li>Реализация <code>ReportService</code> — заполнение шаблона расчётными данными и чувствительностью.</li>
+<li>Реализация вызова генерации отчёта: отдельный API-метод (<code>/report</code>) или консольный сценарий (например, <code>ReportGenerator</code>).</li>
+<li>Подготовка тестового примера отчёта (сгенерированный HTML + скриншот <code>docs/screens/report.png</code> и краткое описание в документации).</li>
+</ol>
+<p><strong>Блок «Docker-контейнеризация»</strong></p>
+<ol>
+<li>Создание <code>Dockerfile</code> (multi-stage сборка, экспонирование порта, <code>ENTRYPOINT</code>).</li>
+<li>Создание <code>docker-compose.yml</code> (если требуется, добавление БД или других сервисов).</li>
+<li>Подготовка вспомогательного скрипта/описания для запуска и проверки (например, <code>docker/README-docker.md</code> с командами <code>docker build</code>, <code>docker run</code>, <code>docker compose up</code> и проверкой API).</li>
+<li>Оформление раздела README «Запуск в Docker» с командами и описанием типичного сценария запуска.</li>
+</ol>
+<h3 id="_12">Распределение по размеру команды</h3>
+<p><strong>Команда из 2 человек</strong></p>
+<ul>
+<li>Всего задач: 12.  </li>
+<li>Каждый участник выполняет по 6 задач.</li>
+</ul>
+<p>Пример:</p>
+<ul>
+<li>Участник A: задачи 1, 3, 5, 7, 9, 11.  </li>
+<li>Участник B: задачи 2, 4, 6, 8, 10, 12.</li>
+</ul>
+<p><strong>Команда из 3 человек</strong></p>
+<ul>
+<li>Всего задач: 12.  </li>
+<li>Каждый участник выполняет по 4 задачи.</li>
+</ul>
+<p>Пример:</p>
+<ul>
+<li>Участник A: задачи 1, 4, 7, 10.  </li>
+<li>Участник B: задачи 2, 5, 8, 11.  </li>
+<li>Участник C: задачи 3, 6, 9, 12.</li>
+</ul>
+<p><strong>Команда из 4 человек</strong></p>
+<ul>
+<li>Всего задач: 12.  </li>
+<li>Каждый участник выполняет по 3 задачи.</li>
+</ul>
+<p>Пример:</p>
+<ul>
+<li>Участник A: задачи 1, 5, 9.  </li>
+<li>Участник B: задачи 2, 6, 10.  </li>
+<li>Участник C: задачи 3, 7, 11.  </li>
+<li>Участник D: задачи 4, 8, 12.</li>
+</ul>
+<p>Важно:</p>
+<ul>
+<li>каждый участник должен иметь в своей зоне ответственности <strong>код</strong> (класс сервиса, контроллер, шаблон или конфигурация Docker), а не только документацию;</li>
+<li>все участники фиксируют свои изменения в виде отдельных коммитов и Pull Request, чтобы можно было отследить вклад каждого.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
