@@ -1,7 +1,9 @@
-site_name: Методические рекомендации по лабораторным работам по дисциплине "Проектирование и дизайн ИС 3 курс - 1 семестр" 
-
+site_name: Лабораторные работы по дисциплине "ПИДИС"
+  
 theme:
   name: material
+  logo: assets/image/logo.png
+  favicon: assets/image/logo.png
   language: ru
   features:
     - content.code.copy     # кнопка "копировать"
@@ -9,6 +11,8 @@ theme:
     - navigation.top        # "наверх"
     - navigation.tracking   # подсветка активного пункта в правом TOC
     - toc.follow            # правый TOC следует за прокруткой
+plugins:
+- glightbox
 nav:
     - Лабораторная работа №1: index.md
     - Лабораторная работа №2: 2.md
@@ -31,8 +35,9 @@ markdown_extensions:
   - attr_list
   - pymdownx.highlight
   - pymdownx.details
-  - pymdownx.emoji
   - pymdownx.tasklist
+  - md_in_html
+  - pymdownx.blocks.caption
   - pymdownx.superfences:
         custom_fences:
           - name: mermaid
@@ -44,3 +49,4 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css
+    
