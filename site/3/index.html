@@ -1,0 +1,3055 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../2/">
+      
+      
+        <link rel="next" href="../4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/image/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Лабораторная работа №3 - Лабораторные работы по дисциплине "ПИДИС"</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#no3-" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Лабораторные работы по дисциплине &quot;ПИДИС&quot;" class="md-header__button md-logo" aria-label="Лабораторные работы по дисциплине " ПИДИС"" data-md-component="logo">
+      
+  <img src="../assets/image/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Лабораторные работы по дисциплине "ПИДИС"
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Лабораторная работа №3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Лабораторные работы по дисциплине &quot;ПИДИС&quot;" class="md-nav__button md-logo" aria-label="Лабораторные работы по дисциплине " ПИДИС"" data-md-component="logo">
+      
+  <img src="../assets/image/logo.png" alt="logo">
+
+    </a>
+    Лабораторные работы по дисциплине "ПИДИС"
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Описание лабораторных работ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Теория
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Теория">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Роль автоматизированного сбора данных (АСД) в информационных системах
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Штрих-код
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-rfid-radio-frequency-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. RFID (Radio Frequency Identification)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-iot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. IoT — Интернет вещей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Сравнение технологий
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6. Значение для проектирования и дизайна ИС
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Задание
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Задание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Индивидуальная предметная область
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-qr-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Штрих-коды и QR-коды
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2. Штрих-коды и QR-коды">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Необходимо для работы:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по созднию кодов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Требование к оформлению
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Описание каждого пункта таблицы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Описание каждого пункта таблицы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-id_" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. ID_объекта — уникальный идентификатор вашей сущности в предметной области.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. ТипКода — какой именно код сгенерирован:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ЗначениеКода — считанный ответ кода с телефона.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Комментарий/Описание — что именно это за объект
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-rfid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. RFID (имитация)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. RFID (имитация)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по созднию кодов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Необходимо для работы:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Описание каждого пункта таблицы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Описание каждого пункта таблицы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-uid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. UID — уникальный идентификатор
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Объект — название сущности в вашей предметной области
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Статус — текущее состояние объекта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Примечание — дополнительная информация
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-iot-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. IoT-телеметрия
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4. IoT-телеметрия">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iot-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по работе с имитацией IoT-телеметрией
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Необходимо для работы:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Описание каждого пункта таблицы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Описание каждого пункта таблицы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-deviceid-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. DeviceID — авто-генерация в скрипте:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Показатель — «Температура» (строка)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-1830" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Значение — число (18..30)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-datetime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Время — текущая дата/время (DateTime)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-4080" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Влажность — число (40..80)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-sparkline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Микро-график — формула SPARKLINE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Работа с генерацией данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5. Создание листа «Дашборд»
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5. Создание листа «Дашборд»">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по созднию Дашборда
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создайте три поля ниже
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Создайте три поля ниже">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Формула для первого поля:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Формула для второго поля:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Формула для третьего поля:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создайте под ними ещё поля
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Создайте под ними ещё поля">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Последние 120 значений времени (фильтр):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Последние 120 значений температуры:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Последние 120 значений влажности:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-sparkline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Дополнительные формулы для микро-графиков (SPARKLINE)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Дополнительные формулы для микро-графиков (SPARKLINE)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Первая формула (температура)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Вторая формула (влажность)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6. Диаграмма компонентов (имитация)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6. Диаграмма компонентов (имитация)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по работе с диаграммой компонентов
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание по работе с диаграммой компонентов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ТРЕБОВАНИЕ К ОФОРМЛЕНИЮ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Индивидуализация
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-google-appsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7. Использование Google AppSheet для создания прототипа ИС
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.7. Использование Google AppSheet для создания прототипа ИС">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-google-appsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по работе c Google AppSheet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание по работе c Google AppSheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Настройка модели данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Интерфейс и дашборд
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Формы и действия
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Формы и действия">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ux-views-new-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Формы (UX → Views → New → Form):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Действия (Behavior → Actions):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-format-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Правила отображения (Format Rules)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Простая автоматизация (Automation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Проверка работы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Что сдавать
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Контрольные вопросы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Чек-лист для самопроверки
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Форма сдачи
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторные работы №6
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Лабораторные работы №6
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №6 (Инливидуальная часть)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vvedenie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Групповая работа
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    О задаче
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4">
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание по дням
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Задание по дням
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    День 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Требования для оформления
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Теория
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Теория">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Роль автоматизированного сбора данных (АСД) в информационных системах
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Штрих-код
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-rfid-radio-frequency-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. RFID (Radio Frequency Identification)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-iot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. IoT — Интернет вещей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Сравнение технологий
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6. Значение для проектирования и дизайна ИС
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Задание
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Задание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Индивидуальная предметная область
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-qr-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Штрих-коды и QR-коды
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2. Штрих-коды и QR-коды">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Необходимо для работы:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по созднию кодов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Требование к оформлению
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Описание каждого пункта таблицы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Описание каждого пункта таблицы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-id_" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. ID_объекта — уникальный идентификатор вашей сущности в предметной области.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. ТипКода — какой именно код сгенерирован:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ЗначениеКода — считанный ответ кода с телефона.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Комментарий/Описание — что именно это за объект
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-rfid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. RFID (имитация)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. RFID (имитация)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по созднию кодов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Необходимо для работы:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Описание каждого пункта таблицы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Описание каждого пункта таблицы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-uid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. UID — уникальный идентификатор
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Объект — название сущности в вашей предметной области
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Статус — текущее состояние объекта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Примечание — дополнительная информация
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-iot-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. IoT-телеметрия
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4. IoT-телеметрия">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iot-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по работе с имитацией IoT-телеметрией
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Необходимо для работы:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Описание каждого пункта таблицы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Описание каждого пункта таблицы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-deviceid-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. DeviceID — авто-генерация в скрипте:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Показатель — «Температура» (строка)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-1830" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Значение — число (18..30)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-datetime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Время — текущая дата/время (DateTime)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-4080" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Влажность — число (40..80)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-sparkline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Микро-график — формула SPARKLINE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Работа с генерацией данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5. Создание листа «Дашборд»
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5. Создание листа «Дашборд»">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по созднию Дашборда
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создайте три поля ниже
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Создайте три поля ниже">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Формула для первого поля:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Формула для второго поля:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Формула для третьего поля:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создайте под ними ещё поля
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Создайте под ними ещё поля">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Последние 120 значений времени (фильтр):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Последние 120 значений температуры:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Последние 120 значений влажности:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-sparkline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Дополнительные формулы для микро-графиков (SPARKLINE)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Дополнительные формулы для микро-графиков (SPARKLINE)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Первая формула (температура)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Вторая формула (влажность)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6. Диаграмма компонентов (имитация)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6. Диаграмма компонентов (имитация)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по работе с диаграммой компонентов
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание по работе с диаграммой компонентов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ТРЕБОВАНИЕ К ОФОРМЛЕНИЮ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Индивидуализация
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-google-appsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7. Использование Google AppSheet для создания прототипа ИС
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.7. Использование Google AppSheet для создания прототипа ИС">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-google-appsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание по работе c Google AppSheet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание по работе c Google AppSheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Настройка модели данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Интерфейс и дашборд
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Формы и действия
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Формы и действия">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ux-views-new-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Формы (UX → Views → New → Form):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Действия (Behavior → Actions):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-format-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Правила отображения (Format Rules)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Простая автоматизация (Automation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Проверка работы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Что сдавать
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Контрольные вопросы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Чек-лист для самопроверки
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Форма сдачи
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="no3-"><strong>Лабораторная работа №3 -  Изучение устройств и технологий автоматизированного сбора данных</strong></h1>
+<h2 id="1"><strong>1. Теория</strong></h2>
+<h3 id="11"><strong>1.1. Роль автоматизированного сбора данных (АСД) в информационных системах</strong></h3>
+<p>АСД позволяет:</p>
+<ul>
+<li>создавать «цифровой след» для каждой операции;</li>
+<li>обеспечивать прозрачность и управляемость бизнес-процессов;</li>
+<li>минимизировать ручной ввод и человеческие ошибки;</li>
+<li>ускорять процессы учёта, анализа и контроля.</li>
+</ul>
+<p>Применение: логистика, торговля, производство, медицина, транспорт, «умные» города и др.</p>
+<h3 id="12-"><strong>1.2. Штрих-код</strong></h3>
+<p>Штрих-код — графическое изображение данных.
+Сканер считывает отражённый свет и передаёт значение в ИС.</p>
+<p><strong>Применение:</strong> кассы, склады, идентификация документов, билетов, пробирок.</p>
+<p><strong>Основные стандарты:</strong></p>
+<ul>
+<li><strong>EAN / EAN-13</strong></li>
+<li><strong>QR-код</strong></li>
+<li><strong>UPC</strong></li>
+<li><strong>Code 39, Code 128</strong></li>
+</ul>
+<h3 id="13-rfid-radio-frequency-identification"><strong>1.3. RFID (Radio Frequency Identification)</strong></h3>
+<p>RFID использует радиоволны для обмена информацией между меткой и считывателем.</p>
+<p><strong>Типы меток:</strong></p>
+<ol>
+<li>Пассивные — без батареи, до 10 м</li>
+<li>Активные — с батареей, до 100 м</li>
+<li>Полуактивные — гибрид</li>
+</ol>
+<p><strong>Применение:</strong></p>
+<ul>
+<li>логистика (паллета, контейнеры)</li>
+<li>ритейл (антикражные системы)</li>
+<li>производство</li>
+<li>медицина</li>
+<li>транспорт (оплата, идентификация автомобилей)</li>
+</ul>
+<h3 id="14-iot"><strong>1.4. IoT — Интернет вещей</strong></h3>
+<p>IoT — сеть умных устройств с датчиками и модулями связи.</p>
+<p><strong>Архитектура:</strong></p>
+<ol>
+<li>Устройства и сенсоры</li>
+<li>Сети передачи данных (Wi-Fi, Bluetooth, LoRaWAN, 5G)</li>
+<li>Платформы обработки (AWS IoT, Yandex IoT Core)</li>
+<li>Приложения и интерфейсы</li>
+</ol>
+<p><strong>Применение:</strong> умные дома, города, агро-сектор, промышленность, экология.</p>
+<h3 id="15"><strong>1.5. Сравнение технологий</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Технология</th>
+<th>Достоинства</th>
+<th>Недостатки</th>
+<th>Применение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Штрих-коды</td>
+<td>Дешёвые, простые</td>
+<td>Требуют прямой видимости, мало данных</td>
+<td>Ритейл, склад, билеты</td>
+</tr>
+<tr>
+<td>RFID</td>
+<td>Быстрое считывание, нет прямой видимости</td>
+<td>Дороже, возможны помехи</td>
+<td>Логистика, транспорт, медицина</td>
+</tr>
+<tr>
+<td>IoT</td>
+<td>Гибкость, удалённый мониторинг</td>
+<td>Дорогая инфраструктура, вопросы безопасности</td>
+<td>Умные города, промышленность, агро</td>
+</tr>
+</tbody>
+</table>
+<h3 id="16"><strong>1.6. Значение для проектирования и дизайна ИС</strong></h3>
+<p>При проектировании ИС необходимо учитывать:</p>
+<ul>
+<li>источники данных (штрих-код, RFID, IoT);</li>
+<li>формат хранения (SQL/NoSQL);</li>
+<li>интерфейсы;</li>
+<li>производительность;</li>
+<li>безопасность.</li>
+</ul>
+<p>ИС должна предусматривать:</p>
+<ul>
+<li>интеграцию со считывающими устройствами;</li>
+<li>механизмы валидации;</li>
+<li>визуализацию (дашборды);</li>
+<li>масштабируемость и поддержку новых технологий.</li>
+</ul>
+<hr>
+<h2 id="2"><strong>2. Задание</strong></h2>
+<h3 id="21"><strong>2.1. Индивидуальная предметная область</strong></h3>
+<p>Каждый студент использует собственную предметную область.</p>
+<p><strong>Примеры доменных сущностей:</strong></p>
+<ul>
+<li>Поликлиника: Пробирка, Пациент, Кабинет</li>
+<li>Склад: Паллета, Место хранения, Накладная</li>
+<li>Ритейл: Товар, Партия, Стеллаж</li>
+<li>Музей: Экспонат, Витрина, Карточка</li>
+</ul>
+<h3 id="22-qr-"><strong>2.2. Штрих-коды и QR-коды</strong></h3>
+<h4 id="_1">Необходимо для работы:</h4>
+<ul>
+<li>
+<p>Онлайн-генераторы штрих-кодов/QR-кодов:
+<a href="https://barcode.tec-it.com/ru/">https://barcode.tec-it.com/ru/</a></p>
+</li>
+<li>
+<p>Камера смартфона или онлайн-сервис считывания QR/штрих-кодов.</p>
+</li>
+<li>
+<p>Google Таблицы (как бесплатный облачный аналог базы данных).</p>
+</li>
+<li>
+<p>Структура листа «Штрих-коды» см. тут:
+<a href="https://docs.google.com/spreadsheets/d/1sDQKv3aECia8rONVT7h1qeC9AhHRGmd1_zgfk8Ousk8/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1sDQKv3aECia8rONVT7h1qeC9AhHRGmd1_zgfk8Ousk8/edit?usp=sharing</a></p>
+</li>
+</ul>
+<h4 id="_2">Задание по созднию кодов</h4>
+<ul>
+<li>Сгенерируйте 3 разных кода:</li>
+<li><strong>EAN-13 или Code128</strong> — используйте для объекта с числовым ID (например, товар или пробирка).</li>
+<li><strong>QR</strong> — можно закодировать URL, текст или GUID.</li>
+<li><strong>Свободный выбор</strong> (ещё один штрих-/QR-/DataMatrix).</li>
+<li>Считайте коды (камерой телефона или онлайн-ридером).</li>
+<li>Зафиксируйте в таблице считанные значения в колонке «ЗначениеКода».</li>
+<li>Добавьте в колонку Комментарий/Описание пояснение, какой объект соответствует коду.</li>
+<li>Создайте минимум 5–10 строк реальных записей по объектам вашей предметной области.</li>
+</ul>
+<h4 id="_3">Требование к оформлению</h4>
+<ul>
+<li>Шапка таблицы (строка 1) должна быть выделена (заливка цветом + жирный шрифт).</li>
+<li>Включить фильтр (Google Таблицы → Данные → Создать фильтр), чтобы можно было фильтровать по «ТипКода» или «Комментарий».</li>
+<li>Уникальность ID_объекта: ни один объект не должен повторяться.</li>
+<li>Все коды должны реально сканироваться.</li>
+</ul>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/8.png" data-desc-position="bottom"><img alt="Пример таблицы" src="../assets/image/8.png"></a></p>
+<figcaption>
+<p>Рисунок 1 – Пример заполнения кодов</p>
+</figcaption>
+</figure>
+<h4 id="_4">Описание каждого пункта таблицы</h4>
+<h5 id="1-id_">1. <strong>ID_объекта</strong> — уникальный идентификатор вашей сущности в предметной области.</h5>
+<p><strong>Пример формата:</strong>
+<code>&lt;Префикс&gt;-&lt;Тема&gt;-Год-Номер&gt;</code>
+Примеры:</p>
+<ul>
+<li>MUSE-EXP-2025-0012 (экспонат музея)</li>
+<li>CLIN-TUBE-2025-0007 (пробирка в клинике)</li>
+<li>WARE-PAL-2025-023 (паллет на складе)</li>
+</ul>
+<h5 id="2_1">2. <strong>ТипКода</strong> — какой именно код сгенерирован:</h5>
+<p>Code128, QR, DataMatrix (свободный выбор для 3-го примера).</p>
+<h5 id="3">3. <strong>ЗначениеКода</strong> — считанный ответ кода с телефона.</h5>
+<p><strong>Готовый штрих-код</strong> (скрин сгенерированного кода).</p>
+<h5 id="4">4. <strong>Комментарий/Описание</strong> — что именно это за объект</h5>
+<p>(название товара, название экспоната, назначение документа и т.д.).</p>
+<h3 id="23-rfid"><strong>2.3. RFID (имитация)</strong></h3>
+<h4 id="_5">Задание по созднию кодов</h4>
+<p>Необходимо познакомиться с принципами RFID, сгенерировать уникальные идентификаторы (UID/UUID) для объектов своей предметной области и отразить их учёт в Google Таблицах.</p>
+<h4 id="_6">Необходимо для работы:</h4>
+<ul>
+<li>Онлайн-генератор UID/UUID (например uuidgenerator.net, random.org/strings, любой другой бесплатный сервис).</li>
+<li>Google Таблицы (как учётная база).</li>
+<li>Структура листа «RFID» см. тут:
+<a href="https://docs.google.com/spreadsheets/d/1sDQKv3aECia8r0NVT7h1qeC9AhHRGmd1_zgfk8Ousk8/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1sDQKv3aECia8r0NVT7h1qeC9AhHRGmd1_zgfk8Ousk8/edit?usp=sharing</a></li>
+</ul>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/9.png" data-desc-position="bottom"><img alt="Пример таблицы" src="../assets/image/9.png"></a></p>
+<figcaption>
+<p>Рисунок 2 – Пример заполнения RFID</p>
+</figcaption>
+</figure>
+<h4 id="_7">Описание каждого пункта таблицы</h4>
+<h5 id="1-uid">1. <strong>UID</strong> — уникальный идентификатор</h5>
+<p>Например: <code>550e8400-e29b-41d4-a716-446655440000</code>.</p>
+<h5 id="2_2">2. <strong>Объект</strong> — название сущности в вашей предметной области</h5>
+<p>Примеры: «Картина», «Пробирка крови», «Паллета», «Книга» и т.д.</p>
+<h5 id="3_1">3. <strong>Статус</strong> — текущее состояние объекта</h5>
+<p>Для разных областей можно адаптировать: </p>
+<ul>
+<li>склад: «На складе» / «Отгружено»</li>
+<li>музей: «В экспозиции» / «В фонде» / «На реставрации»</li>
+<li>клиника: «Использована» / «Готова к анализу» / «Утилизирована»</li>
+</ul>
+<h5 id="4_1">4. <strong>Примечание</strong> — дополнительная информация</h5>
+<p>Например: дата поступления, номер партии, локация и т.д.</p>
+<h3 id="24-iot-"><strong>2.4. IoT-телеметрия</strong></h3>
+<h4 id="iot-">Задание по работе с имитацией IoT-телеметрией</h4>
+<p>Познакомиться с принципами фиксации данных для IoT-телеметрии, поработать с генерацией данных, создание данных через код</p>
+<h4 id="_8">Необходимо для работы:</h4>
+<ul>
+<li>Использование Google таблиц (как учётная базу).</li>
+<li>Структура листа «IoT-телеметрия» см. тут:
+<a href="https://docs.google.com/spreadsheets/d/1sDQKv3aECia8r0NVT7h1qeC9AhHRGmd1_zgfk8Ousk8/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1sDQKv3aECia8r0NVT7h1qeC9AhHRGmd1_zgfk8Ousk8/edit?usp=sharing</a></li>
+</ul>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/10.png" data-desc-position="bottom"><img alt="Пример таблицы" src="../assets/image/10.png"></a></p>
+<figcaption>
+<p>Рисунок 3 – Пример заполнении IoT-телеметрия</p>
+</figcaption>
+</figure>
+<h4 id="_9">Описание каждого пункта таблицы</h4>
+<h5 id="1-deviceid-">1. <strong>DeviceID</strong> — авто-генерация в скрипте:</h5>
+<p><code>DEV-&lt;ВАШ_ДОМЕН&gt;-NNN</code></p>
+<h5 id="2_3">2. <strong>Показатель</strong> — «Температура» (строка)</h5>
+<h5 id="3-1830">3. <strong>Значение</strong> — число (18..30)</h5>
+<h5 id="4-datetime">4. <strong>Время</strong> — текущая дата/время (DateTime)</h5>
+<h5 id="5-4080">5. <strong>Влажность</strong> — число (40..80)</h5>
+<h5 id="6-sparkline">6. <strong>Микро-график</strong> — формула SPARKLINE</h5>
+<h4 id="_10">Работа с генерацией данных</h4>
+<p>1) В таблице: Extensions → Apps Script → вставьте код → сохраните → дайте права при первом запуске → в Triggers добавьте appendReadings "раз в минуту". <br>
+2) В DEVICES впишите ваши DeviceID (или вызовите generateDeviceList(5) в консоли редактора и скопируйте список). <br>
+3) Ручной запуск appendReadings() — проверка. <br>
+4) Triggers → Time-driven → Every minute. </p>
+<blockquote>
+<p>Внимание! <br>
+Необходимо будет модифицировать код под свои значения</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">SHEET_DATA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'IoT-телеметрия'</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">DEVICES</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">'DEV-WARE-001'</span><span class="p">,</span><span class="s1">'DEV-WARE-002'</span><span class="p">];</span><span class="w"> </span><span class="c1">// замените под свою предметную область</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">DOMAIN</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s1">'WARE'</span><span class="p">;</span><span class="w"> </span><span class="c1">// ваш домен (например MUSE/CLIN/etc)</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">initSheet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">sh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">_getSheet</span><span class="p">();</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">sh</span><span class="p">.</span><span class="nx">getLastRow</span><span class="p">()</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">sh</span><span class="p">.</span><span class="nx">appendRow</span><span class="p">([</span><span class="s1">'DeviceID'</span><span class="p">,</span><span class="s1">'Показатель'</span><span class="p">,</span><span class="s1">'Значение'</span><span class="p">,</span><span class="s1">'Время'</span><span class="p">,</span><span class="s1">'Влажность'</span><span class="p">,</span><span class="s1">'Микро-график'</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">appendReadings</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">sh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">_getSheet</span><span class="p">();</span>
+<span class="w">  </span><span class="nx">initSheet</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">DEVICES</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">_randInt</span><span class="p">(</span><span class="mf">18</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">hum</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nx">_randInt</span><span class="p">(</span><span class="mf">40</span><span class="p">,</span><span class="w"> </span><span class="mf">80</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">rows</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">d</span><span class="p">,</span><span class="w"> </span><span class="s1">'Температура'</span><span class="p">,</span><span class="w"> </span><span class="nx">temp</span><span class="p">,</span><span class="w"> </span><span class="nx">now</span><span class="p">,</span><span class="w"> </span><span class="nx">hum</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span><span class="p">]);</span><span class="w"> </span><span class="c1">// микро-график заполним формулой на дашборде</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="w">  </span><span class="nx">sh</span><span class="p">.</span><span class="nx">getRange</span><span class="p">(</span><span class="nx">sh</span><span class="p">.</span><span class="nx">getLastRow</span><span class="p">()</span><span class="o">+</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">rows</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">rows</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">length</span><span class="p">).</span><span class="nx">setValues</span><span class="p">(</span><span class="nx">rows</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/** Дополнительно: генерация DeviceID по маске DEV-&lt;DOMAIN&gt;-NNN */</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">generateDeviceList</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="o">=</span><span class="mf">1</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;=</span><span class="nx">count</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="nx">i</span><span class="p">).</span><span class="nx">padStart</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="s1">'0'</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">list</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="sb">`DEV-</span><span class="si">${</span><span class="nx">DOMAIN</span><span class="si">}</span><span class="sb">-</span><span class="si">${</span><span class="nx">n</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">list</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">', '</span><span class="p">));</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">list</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// ===== helpers =====</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">_getSheet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">ss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SpreadsheetApp</span><span class="p">.</span><span class="nx">getActive</span><span class="p">();</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">ss</span><span class="p">.</span><span class="nx">getSheetByName</span><span class="p">(</span><span class="nx">SHEET_DATA</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">ss</span><span class="p">.</span><span class="nx">insertSheet</span><span class="p">(</span><span class="nx">SHEET_DATA</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">_randInt</span><span class="p">(</span><span class="nx">min</span><span class="p">,</span><span class="w"> </span><span class="nx">max</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// [min..max]</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">min</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="p">(</span><span class="nx">max</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">min</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="25"><strong>2.5. Создание листа «Дашборд»</strong></h3>
+<h4 id="_11">Задание по созднию Дашборда</h4>
+<p>Сделайте лист <strong>«Дашборд»</strong> и добавьте:</p>
+<ul>
+<li><strong>IoT-дашборд (Температура/Влажность)</strong></li>
+<li><strong>Фильтр DeviceID</strong> (введите ID)</li>
+<li>И в соседнем поле свой ID</li>
+</ul>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/11.png" data-desc-position="bottom"><img alt="Пример таблицы" src="../assets/image/11.png"></a></p>
+<figcaption>
+<p>Рисунок 4 – Пример заполнении листа «Дашборд»</p>
+</figcaption>
+</figure>
+<h4 id="_12">Создайте три поля ниже</h4>
+<h5 id="1_1">1. Формула для первого поля:</h5>
+<div class="highlight"><pre><span></span><code>=MAXIFS('IoT-телеметрия'!D:D; 'IoT-телеметрия'!A:A; $B$2)
+</code></pre></div>
+<h5 id="2_4">2. Формула для второго поля:</h5>
+<div class="highlight"><pre><span></span><code>=INDEX('IoT-телеметрия'!C:C; MATCH(1; ('IoT-телеметрия'!A:A=$B$2)*('IoT-телеметрия'!D:D=$A$5); 0))
+</code></pre></div>
+<h5 id="3_2">3. Формула для третьего поля:</h5>
+<div class="highlight"><pre><span></span><code>=INDEX('IoT-телеметрия'!E:E; MATCH(1; ('IoT-телеметрия'!A:A=$B$2)*('IoT-телеметрия'!D:D=$A$5); 0))
+</code></pre></div>
+<h4 id="_13">Создайте под ними ещё поля</h4>
+<h5 id="1-120">1. Последние 120 значений времени (фильтр):</h5>
+<div class="highlight"><pre><span></span><code>=INDEX(
+  FILTER('IoT-телеметрия'!D:D; 'IoT-телеметрия'!A:A=$B$2);
+  MAX(ROWS(FILTER('IoT-телеметрия'!D:D; 'IoT-телеметрия'!A:A=$B$2))-120; 0)
+)
+</code></pre></div>
+<h5 id="2-120">2. Последние 120 значений температуры:</h5>
+<div class="highlight"><pre><span></span><code>=INDEX(
+  FILTER('IoT-телеметрия'!C:C; 'IoT-телеметрия'!A:A=$B$2);
+  MAX(ROWS(FILTER('IoT-телеметрия'!C:C; 'IoT-телеметрия'!A:A=$B$2))-120; 0)
+)
+</code></pre></div>
+<h5 id="3-120">3. Последние 120 значений влажности:</h5>
+<div class="highlight"><pre><span></span><code>=INDEX(
+  FILTER('IoT-телеметрия'!E:E; 'IoT-телеметрия'!A:A=$B$2);
+  MAX(ROWS(FILTER('IoT-телеметрия'!E:E; 'IoT-телеметрия'!A:A=$B$2))-120; 0)
+)
+</code></pre></div>
+<h4 id="-sparkline">Дополнительные формулы для микро-графиков (SPARKLINE)</h4>
+<h5 id="_14">Первая формула (температура)</h5>
+<div class="highlight"><pre><span></span><code>=IF(
+  ROWS(FILTER('IoT-телеметрия'!C:C; 'IoT-телеметрия'!A:A="DEV-WARE-001"))&lt;2;
+  "";
+  SPARKLINE(
+    QUERY(
+      IFERROR(FILTER('IoT-телеметрия'!C:C; 'IoT-телеметрия'!A:A="DEV-WARE-001"));
+      "offset "&amp;MAX(ROWS(IFERROR(FILTER('IoT-телеметрия'!C:C; 'IoT-телеметрия'!A:A=$A$32)))-30; 0);
+      0
+    )
+  )
+)
+</code></pre></div>
+<hr>
+<h5 id="_15">Вторая формула (влажность)</h5>
+<div class="highlight"><pre><span></span><code>=IF(
+  ROWS(FILTER('IoT-телеметрия'!E:E; 'IoT-телеметрия'!A:A=$A$57))&lt;2;
+  "";
+  SPARKLINE(
+    QUERY(
+      IFERROR(FILTER('IoT-телеметрия'!E:E; 'IoT-телеметрия'!A:A=$A$57));
+      "offset "&amp;MAX(ROWS(IFERROR(FILTER('IoT-телеметрия'!E:E; 'IoT-телеметрия'!A:A=$A$32)))-30; 0);
+      0
+    )
+  )
+)
+</code></pre></div>
+<h3 id="26"><strong>2.6. Диаграмма компонентов (имитация)</strong></h3>
+<h4 id="_16">Задание по работе с диаграммой компонентов</h4>
+<p>Диаграмма должна показать, как источники данных (штрих-коды, RFID, IoT) интегрируются в информационную систему, где обрабатываются данные и в каком виде они попадают в приложения (дашборды, отчёты).</p>
+<p><strong>Элементы:</strong></p>
+<ul>
+<li>Источники данных (устройства)</li>
+<li>Edge-/middleware-компоненты</li>
+<li>Интеграция/транспорт</li>
+<li>Хранилище</li>
+<li>Потребители</li>
+</ul>
+<p><strong>Связи и протоколы:</strong></p>
+<ul>
+<li>Между компонентами должны быть подписаны протоколы или способы связи</li>
+</ul>
+<p>Материалы для изучения:
+<a href="https://creately.com/blog/ru/uncategorized-ru/%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%B8%D0%B5-%D0%BF%D0%BE-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BD%D0%BE%D0%B9-%D0%B4%D0%B8%D0%B0%D0%B3/">https://creately.com/blog/ru/uncategorized-ru/%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%B8%D0%B5-%D0%BF%D0%BE-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BD%D0%BE%D0%B9-%D0%B4%D0%B8%D0%B0%D0%B3/</a>
+<a href="https://www.mindonmap.com/ru/blog/uml-component-diagram/">https://www.mindonmap.com/ru/blog/uml-component-diagram/</a></p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/image/12.png" data-desc-position="bottom"><img alt="Диаграмма компонентов" src="../assets/image/12.png"></a></p>
+<figcaption>
+<p>Рисунок 5 – Пример диаграммы</p>
+</figcaption>
+</figure>
+<h5 id="_17">ТРЕБОВАНИЕ К ОФОРМЛЕНИЮ</h5>
+<ul>
+<li>Все компоненты должны быть оформлены в стиле <strong>UML Component Diagram</strong>
+  (прямоугольники с “ушками” или стандартные UML-блоки).</li>
+<li>Устройства (<code>&lt;&lt;device&gt;&gt;</code>) и базы (<code>&lt;&lt;database&gt;&gt;</code>) должны быть помечены стереотипами.</li>
+<li>Стрелки связи — с подписями протоколов.</li>
+<li>
+<p>Обязательно разделить уровни:</p>
+</li>
+<li>
+<p>Устройства (сверху)</p>
+</li>
+<li>Edge/middleware (средний слой)</li>
+<li>Интеграция/обработка (ниже)</li>
+<li>Хранилище и дашборды (внизу)</li>
+</ul>
+<h5 id="_18">Индивидуализация</h5>
+<ul>
+<li>
+<p>На диаграмме должны использоваться доменные объекты вашей предметной области (например):</p>
+</li>
+<li>
+<p>музей → «Экспонат»</p>
+</li>
+<li>клиника → «Пробирка»</li>
+<li>склад → «Паллета»</li>
+<li>
+<p>библиотека → «Книга»</p>
+</li>
+<li>
+<p>Допускается добавление поясняющих комментариев (notes).</p>
+</li>
+</ul>
+<p>Ниже приведён <strong>исправленный, структурированный и оформленный в Markdown</strong> текст.
+Исправлены ошибки, устранены опечатки («Штрих-кодыь» → «Штрих-коды»), добавлены недостающие пояснения, исправлена двойная «??» внутри ссылки, уточнены корректные пути меню AppSheet и логика настроек.</p>
+<hr>
+<h3 id="27-google-appsheet"><strong>2.7. Использование Google AppSheet для создания прототипа ИС</strong></h3>
+<h4 id="c-google-appsheet">Задание по работе c Google AppSheet</h4>
+<p>Google предоставляет бесплатный сервис для создания прототипов приложений, работающих как облачная СУБД и интерфейс в одной вкладке — <strong>AppSheet</strong>:
+<a href="https://about.appsheet.com/how-to-create-an-app/?utm_source=sheets_tools_learn_how&amp;utm_medium=sheets&amp;utm_campaign=workspace_appsheet">https://about.appsheet.com/how-to-create-an-app/?utm_source=sheets_tools_learn_how&amp;utm_medium=sheets&amp;utm_campaign=workspace_appsheet</a></p>
+<h5 id="1_2">1. Настройка модели данных</h5>
+<p>Откройте <strong>Data → Columns</strong> и проверьте типы полей:</p>
+<ul>
+<li><strong>Идентификаторы</strong> (<code>ID_объекта</code>, <code>UID</code>, <code>DeviceID</code>) → <em>Text</em>, <strong>Is key = TRUE</strong>.</li>
+<li><strong>ТипКода, Статус, Показатель</strong> → <em>Enum</em> (перечисление).</li>
+<li><strong>Значение</strong>, <strong>Влажность</strong> → <em>Decimal</em>.</li>
+<li><strong>Время</strong> → <em>DateTime</em>.</li>
+<li>Включите <strong>Scan Barcode</strong> для полей <em>ЗначениеКода</em> и <em>UID</em>, чтобы можно было сканировать камерой смартфона.</li>
+</ul>
+<h5 id="2_5">2. Интерфейс и дашборд</h5>
+<p>Откройте <strong>UX → Views</strong>.</p>
+<p>Создайте новый <strong>Dashboard</strong> и добавьте в него:</p>
+<ul>
+<li>таблицу <strong>Штрих-коды</strong> (<em>Deck</em> или <em>Table</em>),</li>
+<li>таблицу <strong>RFID</strong> (<em>Table</em>),</li>
+<li>график из <strong>IoT-телеметрия</strong> (<em>Chart → Line</em>).</li>
+</ul>
+<p>Включите опцию <strong>Interactive Mode</strong>, чтобы выбор объекта автоматически фильтровал связанные данные (мастер-детейл).</p>
+<h5 id="3_3">3. Формы и действия</h5>
+<h6 id="ux-views-new-form">Формы (<strong>UX → Views → New → Form</strong>):</h6>
+<ul>
+<li><strong>Штрих-коды</strong> — форма добавления нового объекта; включите поле для сканирования штрих/QR-кода.</li>
+<li><strong>RFID</strong> — форма изменения статуса и добавления примечания.</li>
+</ul>
+<h6 id="behavior-actions">Действия (<strong>Behavior → Actions</strong>):</h6>
+<ul>
+<li><strong>Отметить как «Отгружено»</strong> — изменение поля <em>Статус</em>.</li>
+<li><strong>Вернуть на склад</strong> — противоположное действие.</li>
+<li>Включите отображение действий как кнопок в таблице <strong>RFID</strong> (Display: <em>Display prominently</em>).</li>
+</ul>
+<h5 id="4-format-rules">4. Правила отображения (Format Rules)</h5>
+<p>Откройте <strong>UX → Format Rules</strong> и добавьте:</p>
+<ul>
+<li>правила по полю <strong>Статус</strong> — выделение цветом (например, зелёный/красный/синий);</li>
+<li>правило для <strong>Значение</strong> — подсветка, если превышен порог (например, температура &gt; 28);</li>
+<li>правило для <strong>Показатель</strong> — добавить иконку (датчик, термометр, влажность).</li>
+</ul>
+<h5 id="5-automation">5. Простая автоматизация (Automation)</h5>
+<p>Откройте <strong>Behavior → Bots</strong>.</p>
+<p>Пример бота:</p>
+<ul>
+<li><strong>Event:</strong> изменение поля <em>Статус</em> в таблице <strong>RFID</strong>.</li>
+<li>
+<p><strong>Process:</strong> если <code>Статус = "Отгружено"</code>, то:</p>
+</li>
+<li>
+<p>отправить e-mail уведомление,</p>
+</li>
+<li>или добавить запись в таблицу-журнал (лог событий).</li>
+</ul>
+<h5 id="6">6. Проверка работы</h5>
+<ul>
+<li>Добавьте новый объект в <strong>Штрих-коды</strong>, отсканируйте штрих-код или QR-код.</li>
+<li>Измените <em>Статус</em> объекта в <strong>RFID</strong> — обновление должно отображаться мгновенно.</li>
+<li>Откройте дашборд — графики температуры и влажности (из IoT) обновляются автоматически при появлении новых значений.</li>
+</ul>
+<h5 id="7">7. Что сдавать</h5>
+<ol>
+<li><strong>Ссылка на приложение AppSheet</strong>
+   (AppSheet → Manage → Deploy → Share → <em>App link</em>).</li>
+<li><strong>Ссылка на Google-таблицу</strong>, из которой строилось приложение.</li>
+</ol>
+<hr>
+<h2 id="3_4"><strong>3. Контрольные вопросы</strong></h2>
+<p>Пропускаются для этой работы. </p>
+<hr>
+<h2 id="4-"><strong>4. Чек-лист для самопроверки</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Балл</th>
+<th>Критерии выполнения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3</strong></td>
+<td>Работа выполнена самостоятельно, но есть недочёты: <br>• Заполнены все обязательные таблицы (Штрих-коды, RFID, IoT-телеметрия), но встречаются неточности в данных; <br>• Автоматизация IoT частично работает: скрипт запускается, но не полностью корректен (ошибки в DeviceID, отсутствии SPARKLINE, неполное заполнение); <br>• Дашборд создан, но отдельные формулы или фильтры работают не полностью; <br>• Диаграмма компонентов выполнена, но упрощена: отсутствуют отдельные связи, протоколы или слои; <br>• Оформление неаккуратное, есть ошибки в структуре, но логика в целом соблюдена.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Выполнены не все требуемые элементы работы или значительная часть выполнена некорректно: <br>• Таблицы Штрих-кодов / RFID / IoT заполнены частично или с ошибками; <br>• Скрипт IoT не работает, данные не генерируются автоматически; <br>• Дашборд содержит ошибки: формулы не работают, выборка не фильтруется; <br>• Диаграмма компонентов содержит грубые ошибки (нарушение UML-нотаций, отсутствие стереотипов, неправильная логика взаимодействий).</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>Выполнена лишь небольшая часть работы: <br>• Представлены отдельные таблицы, но данные неполные или некорректные; <br>• Скрипт IoT отсутствует или не запускается; <br>• Дашборд отсутствует либо создан на минимальном уровне (1-2 поля без логики); <br>• Диаграмма компонентов примитивна, содержит многочисленные ошибки или не отражает взаимодействие технологий АСД/IoT/RFID.</td>
+</tr>
+<tr>
+<td><strong>0</strong></td>
+<td>Работа скопирована, выполнена с помощью ИИ без переработки, содержит шаблонные данные или <strong>не сдана</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5"><strong>5. Форма сдачи</strong></h2>
+<blockquote>
+<p>Внимание! 
+При отправке ссылок настраиваете доступ по ссылке! </p>
+</blockquote>
+<p>Ссылки на таблицу и прототип прикрепить к ЛМС </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
