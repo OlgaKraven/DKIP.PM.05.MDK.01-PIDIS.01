@@ -334,19 +334,19 @@ Word автоматически сформирует содержание с н�
 
 ##### **2.6.2.3. Настройка стиля**
 
-![Image](https://support.microsoft.com/images/ru-ru/5af7327d-83d8-4103-b18a-f8c345fecb92?utm_source=chatgpt.com)
+![image](https://support.microsoft.com/images/ru-ru/5af7327d-83d8-4103-b18a-f8c345fecb92?utm_source=chatgpt.com)
 
 /// caption
 Рисунок 9 — Пример оформления заголовка 
 /// 
 
-![Image](https://prooffice24.ru/wp-content/uploads/2017/12/28_%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D0%B8-%D0%97%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%BA-1-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F.png?utm_source=chatgpt.com)
+![image](https://prooffice24.ru/wp-content/uploads/2017/12/28_%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D0%B8-%D0%97%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%BA-1-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F.png?utm_source=chatgpt.com)
 
 /// caption
 Рисунок 10 — Пример настроек
 /// 
 
-![Image](https://prooffice24.ru/wp-content/uploads/2017/08/7_%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE-%D1%81%D1%82%D0%B8%D0%BB%D1%8F.png?utm_source=chatgpt.com)
+![image](https://prooffice24.ru/wp-content/uploads/2017/08/7_%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE-%D1%81%D1%82%D0%B8%D0%BB%D1%8F.png?utm_source=chatgpt.com)
 
 /// caption
 Рисунок 11 — как поставить выравнивание
@@ -481,19 +481,19 @@ Word применит все настройки автоматически.
 
 #### **2.8.2.3. Элементы линейки и их назначение**
 
-![Image](https://pedsovet.su/_pu/57/64069288.jpg?utm_source=chatgpt.com)
+![image](https://pedsovet.su/_pu/57/64069288.jpg?utm_source=chatgpt.com)
 
 /// caption
 Рисунок 8 — Пример линейки
 /// 
 
-![Image](https://support.microsoft.com/images/ru-ru/2c7feb22-03fb-428a-9756-d0f7088f1d95?utm_source=chatgpt.com)
+![image](https://support.microsoft.com/images/ru-ru/2c7feb22-03fb-428a-9756-d0f7088f1d95?utm_source=chatgpt.com)
 
 /// caption
 Рисунок 9 — Ползунки линейки
 /// 
 
-![Image](https://hetmanrecovery.com/ru/pic/blog/a181/word-02.png?utm_source=chatgpt.com)
+![image](https://hetmanrecovery.com/ru/pic/blog/a181/word-02.png?utm_source=chatgpt.com)
 
 /// caption
 Рисунок 10 — Включить линейку
