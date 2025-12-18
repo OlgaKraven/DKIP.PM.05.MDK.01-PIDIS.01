@@ -7,3 +7,27 @@
 .md-header__topic {
   color: #333;
 }
+
+/* Контейнер Mermaid */
+.md-typeset .mermaid {
+  transition: transform 0.25s ease;
+  transform-origin: center center;
+  cursor: zoom-in;
+}
+
+/* Увеличение при наведении */
+.md-typeset .mermaid:hover {
+  transform: scale(2.5);
+  background-color: #fafafa;
+  z-index: 10;
+}
+
+.md-typeset blockquote
+{
+    border-left: 0.3rem solid; /* цвет линии */
+    border-left-color: #e53935;
+    background-color: #fafafa;
+    padding: 0.6rem 1rem;
+    margin: 1rem 0;
+    color: #333;
+}
